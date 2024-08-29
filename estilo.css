@@ -1,6 +1,7 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -21,9 +22,13 @@ h1 {
 }
 
 nav {
-    background-color:#4682A9;
+    background-image: url(/assets/fondo5.jpg);
     display: flex;
     justify-content: space-between;
+}
+
+nav h1{
+    color: black;
 }
 .inicio{
     height: 100vh;
@@ -37,6 +42,17 @@ nav {
 
 .buttonHero{
     margin-top: 50px;
+    border-radius: 10px;
+    padding: 20px;
+    outline: none;
+    background-color: #5999ec;
+    border: #0056b3 2px solid;
+    font-size: 30px;
+    transition:  1.s ease-in-out;
+}
+
+.buttonHero:hover{
+    background-color: #0d5dc5;
 }
 
 .texto{
@@ -50,7 +66,7 @@ nav {
   font-optical-sizing: auto;
   font-weight:600;
   font-size: 70px;
-  
+  transition: margin-right 2s ease-in-out;
 }
 
 .barra{
@@ -60,7 +76,7 @@ nav {
 }
 
 .lista{
-    color: #F6F4EB;
+    color: black;
     padding: 0px 15px;
     font-size: 20px;
 }
@@ -84,6 +100,8 @@ nav {
     font-family: "Raleway", sans-serif;
     font-weight: 500;
     font-size: 40px;
+    text-decoration: underline;
+    text-transform: capitalize;
 }
 
 hr {
@@ -97,6 +115,8 @@ hr {
     font-weight: 300;
     color: black;
     text-align: center;
+    letter-spacing: 1px;
+    
 }
 
 hr {
@@ -178,7 +198,7 @@ ul {
 }
 
 .materias li {
-    background-color: #e0e0e0;
+    background-color: #91C8E4;
     margin: 10px 0;
     padding: 15px;
     border-radius: 5px;
@@ -189,7 +209,7 @@ ul {
 }
 
 .materias li:hover {
-    background-color: #c0c0c0;
+    background-color: #749BC2;
 }
 
 footer {
@@ -213,6 +233,10 @@ footer {
 
 .footer-section .redes {
     margin: 10px;
+}
+
+.footer-section  ul{
+    list-style: square inside;
 }
 
 .footer-section h2 {
